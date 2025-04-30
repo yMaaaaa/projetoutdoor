@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Home - Outdoor Adventure</title>
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Sers pour avoir la navBar + le button. :) -->
+      <nav>
+        <img
+          src="../blocs/white-logo-150x42.png"
+          alt="website logo"
+          href="./index.html"
+        />
+        <div id="mininav">
+          <ul>
+            <li class="responsiveli"><a href="./index.html">Home</a></li>
+            <li class="responsiveli"><a href="./about.html">About</a></li>
+            <li class="responsiveli"><a href="./services.html">Services</a></li>
+            <li class="responsiveli"><a href="./projects.html">Projects</a></li>
+            <li class="responsiveli"><a href="./contact.html">Contact</a></li>
+          </ul>
+          <button>TAKE ACTION</button>
+        </div>
+        <button id="menuburger" onclick="myFunction()">
+          <img
+            src="../blocs/svg+xml;base64,PHN2ZyBjbGFzcz0iYXN0LW1vYmlsZS1zdmcgYXN0LW1lbnUtc3ZnIiBmaWxsPSJjdXJyZW50Q29sb3IiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAg.svg"
+            alt="menu burger"
+            id="burgermenuicon"
+          />
+        </button>
+      </nav>
+      <section id="section1">
+        <p>Explore The Colorful World</p>
+        <span id="spanRed"></span>
+        <h1>A Wonderful Gift</h1>
+        <button id="learnfirst">LEARN MORE</button>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="bloc">
+          <div id="whitequote">
+            <img src="../blocs/quote-1.png" alt="quote" />
+          </div>
+          <div class="text1">
+            <p>
+              "Fuerat aestu carentem habentia spectent tonitrua mutastis locavit
+              liberioris."
+            </p>
+            <p id="adam">-Adam Sendler</p>
+          </div>
+          <!-- .bloc > :last-child css pour être centré. :) -->
+          <div></div>
+        </div>
+      </section>
+      <section>
+        <div class="upcoming">
+          <h3>Upcoming Events</h3>
+          <span id="spanRed2"></span>
+          <div class="upthings">
+            <!-- Tout fais avec deux blocs dans un bloc pour que ce soit plus simple à manipuler. :) -->
+            <div class="up1">
+              <img src="../blocs/hiking-v1.jpg" alt="hiking" class="upimages" />
+              <h4>Everest Camp Trek</h4>
+              <p class="text2">
+                Fuerat aestu carentem habentia spectent tonitrua mutastis
+              </p>
+              <p class="text3">locavit liberioris inistra possedit.</p>
+              <button class="learn2">LEARN MORE →</button>
+            </div>
+            <div class="up1">
+              <img
+                src="../blocs/walking-v1.jpg"
+                alt="walking"
+                class="upimages"
+              />
+              <h4>Walking Holidays</h4>
+              <p class="text2">
+                Fuerat aestu carentem habentia spectent tonitrua mutastis
+              </p>
+              <p class="text3">locavit liberioris inistra possedit.</p>
+              <button class="learn2">LEARN MORE →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="bg1">
+          <div id="explore1">
+            <h3 id="etw">Explore The World</h3>
+            <span id="spanRed3"></span>
+            <p id="etwText">
+              Diremit mundi mare undae nunc mixtam tanto sibi. Nubes unda
+              concordi. Fert his. Recessit mentes praecipites locum caligine sui
+              egens erat. Silvas caeli regna.
+            </p>
+            <button class="learn3">Learn More →</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- On répartit tout en 2 div + 1 qui englobe tout, pour avoir
+         un maximum d'ergonomie. -->
+        <div id="upcomingtours">
+          <div class="upcomingtext">
+            <h3>Upcoming Tours & Destination</h3>
+            <span id="spanRed4"></span>
+            <p id="text4">
+              Fuerat aestu carentem habentia spectent tonitrua mutastis locavit
+              liberioris. Sinistra possedit litora ut nabataeaque. Setucant
+              coepyterunt perveniunt animal! Concordi aurea nabataeaque
+              seductaque constaque cepit sublime flexi nullus.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div class="upcomingpics">
+            <img src="../blocs/outdoor-image-01.jpg" alt="skiing" id="img1" />
+            <img src="../blocs/snow-1.jpg" alt="skiing2" id="img2" />
+            <img src="../blocs/image-1.jpg" alt="biking" id="img3" />
+            <img
+              src="../blocs/outdoor-image-04.jpg"
+              alt="walkingSnow"
+              id="img4"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer">
+        <p>
+          123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 |
+          Email: contact@example.com
+        </p>
+        <p>Copyright © 2025 Outdoor Adventure</p>
+      </div>
+    </footer>
+  </body>
+</html>
