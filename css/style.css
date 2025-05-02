@@ -258,6 +258,7 @@ qui se situent dans mon header */
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 20px;
 }
 
 .learn2:hover {
