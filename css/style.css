@@ -76,11 +76,17 @@ header section {
   align-items: center;
   gap: 35px;
   padding-top: 30px;
-  width: 80%;
-  height: 290.4px;
 }
 
-#menuburger {
+.navburger {
+  display: none;
+}
+
+#buttontake2 {
+  display: none;
+}
+
+.menuburger {
   display: none;
 }
 
@@ -100,7 +106,6 @@ button {
   border-style: solid;
   border-color: #fb2056;
   line-height: 1em;
-  text-transform: uppercase;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -296,7 +301,6 @@ qui se situent dans mon header */
   border-style: solid;
   border-color: #fb2056;
   line-height: 1em;
-  text-transform: uppercase;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -447,6 +451,10 @@ facile de se répérer entre les sections. */
   width: 85%;
 }
 
+/* Pour redimensionner les images une par une, 
+afin d'ajuster au besoin pour une seule d'entre
+elles. */
+
 #img1 {
   display: flex;
   width: 346px;
@@ -497,6 +505,8 @@ footer p {
   line-height: 27.6px;
   text-align: center;
 }
+
+/* Section @media pour le responsive */
 
 @media (max-width: 1200px) {
   header nav {
@@ -555,19 +565,61 @@ footer p {
   }
 
   header div {
+    display: flex;
+  }
+
+  #mininav {
+    display: none;
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  header nav ul li {
+    background-color: #fa2057;
+    opacity: 1;
+    padding: 10px;
+    width: 70px;
+  }
+
+  header nav ul li a {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  #buttontake {
     display: none;
   }
 
-  #menuburger {
+  .navburger {
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navburgerjs {
     display: flex;
+  }
+
+  .menuburger {
+    background-image: url(../blocs/svg+xml;base64,PHN2ZyBjbGFzcz0iYXN0LW1vYmlsZS1zdmcgYXN0LW1lbnUtc3ZnIiBmaWxsPSJjdXJyZW50Q29sb3IiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAg.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     width: 50px;
     height: 50px;
     color: #fa2057;
-  }
-
-  #menuburger:hover {
-    cursor: pointer;
-    color: #da1c4b;
   }
 
   #burgermenuicon {
@@ -666,53 +718,75 @@ footer p {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 705px) {
   header section {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 560px) {
-  header section {
-    gap: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 471px) {
-  header section {
-    gap: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 376px) {
-  header section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 5px;
   }
 
-  #section1 p {
-    font-size: 16px;
-    line-height: 20px;
+  @media (max-width: 630px) {
+    header section {
+      gap: 10px;
+    }
   }
 
-  #section1 h1 {
-    font-size: 43.6px;
-    line-height: 44.8px;
+  @media (max-width: 560px) {
+    header section {
+      gap: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: center;
+    }
   }
-}
 
-@media (max-width: 337px) {
-  .upcoming h3 {
-    text-align: center;
+  @media (max-width: 471px) {
+    header section {
+      gap: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 424px) {
+    header section {
+      gap: 10px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #section1 h1 {
+      font-size: 43.6px;
+      line-height: 44.8px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    header section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #section1 p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    #section1 h1 {
+      font-size: 43.6px;
+      line-height: 44.8px;
+    }
+  }
+
+  @media (max-width: 337px) {
+    .upcoming h3 {
+      text-align: center;
+    }
   }
 }
